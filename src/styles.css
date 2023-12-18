@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Courier New, Courier, monospace;
+  background: linear-gradient(to top right, #e16162, #f9bc60);
+  font-size: 1.2rem;
+}
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  background: transparent;
+  padding: 0.5rem;
+}
+input:focus {
+  outline: none;
+}
+input:hover,
+:focus {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+.container {
+  position: relative;
+  background: transparent;
+  border: 1px solid black;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  max-width: max-content;
+}
+.numberContainer {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+.buttonContainer {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+button {
+  border: 1px solid black;
+  background-color: transparent;
+  padding: 0.5rem 1.5rem;
+  transition: transform 0.5s;
+}
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
